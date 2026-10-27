@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CalendarHeart, Clock, MapPin, Gift, ShoppingBag } from "lucide-react";
-import invitacion from "@/assets/invitacion.jpg.asset.json";
+import hero from "@/assets/hero-dino.jpg";
 import stego from "@/assets/dino-stego.png";
 import trex from "@/assets/dino-trex.png";
 
@@ -40,7 +40,13 @@ function Index() {
   return (
     <main className="mx-auto flex min-h-screen max-w-xl flex-col gap-8 px-5 py-8">
       <section className="overflow-hidden rounded-[2rem] bg-card shadow-soft">
-        <img src={invitacion.url} alt="Invitación Baby Shower con dinosaurio bebé" className="w-full" />
+        <div className="relative">
+          <img src={hero} alt="Dinosaurio bebé saliendo de su huevo" className="w-full" />
+          <div className="absolute inset-x-0 top-6 text-center">
+            <p className="text-xs tracking-[0.25em] text-muted-foreground">¡UNA GRAN AVENTURA ESTÁ POR COMENZAR!</p>
+            <h1 className="mt-2 font-athelas text-5xl leading-none text-foreground sm:text-6xl">Baby Shower</h1>
+          </div>
+        </div>
         <p className="p-7 text-center leading-relaxed text-muted-foreground">
           Con muchísima ilusión esperamos la llegada de nuestro pequeño y queremos compartir contigo la alegría de
           esta nueva aventura. Tu cariño y compañía harán aún más especial este momento en nuestras vidas 💚
@@ -68,7 +74,7 @@ function Index() {
       </section>
 
       <section className="rounded-[2rem] bg-card p-7 text-center shadow-soft">
-        <h2 className="font-script text-5xl text-primary">Mesa de Regalos</h2>
+        <h2 className="font-athelas text-4xl text-primary">Mesa de Regalos</h2>
         <p className="mt-4 leading-relaxed text-muted-foreground">
           El mejor regalo será contar con tu presencia y compartir contigo este momento tan especial. Pero si deseas
           tener un detalle para nuestro bebé, ¡será recibido con muchísimo cariño! Puedes elegir algo de nuestras
@@ -97,8 +103,8 @@ function Index() {
       <footer className="flex flex-col items-center gap-3 pb-6 text-center">
         <img src={stego} alt="" className="float w-36" />
         <p className="text-muted-foreground">¡Te esperamos! Nos encantará celebrar contigo la llegada de nuestro bebé.</p>
-        <p className="font-script text-4xl text-primary">Con cariño,</p>
-        <p className="font-script text-6xl text-foreground">Miri y Jorge</p>
+        <p className="font-athelas text-3xl italic text-primary">Con cariño,</p>
+        <p className="font-athelas text-5xl text-foreground">Miri y Jorge</p>
         <div className="mt-6"><Footprints /></div>
       </footer>
     </main>
