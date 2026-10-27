@@ -42,9 +42,9 @@ function Index() {
       <section className="overflow-hidden rounded-[2rem] bg-card shadow-soft">
         <div className="relative">
           <img src={hero} alt="Dinosaurio bebé saliendo de su huevo" className="w-full" />
-          <div className="absolute inset-x-0 top-[24%] px-16 text-center">
-            <p className="text-xs tracking-[0.25em] text-muted-foreground">¡UNA GRAN AVENTURA ESTÁ POR COMENZAR!</p>
-            <h1 className="mt-2 font-athelas text-5xl leading-none text-foreground sm:text-6xl">Baby Shower</h1>
+          <div className="absolute top-[29%] left-[5%] w-[58%] text-center [container-type:inline-size]">
+            <p className="text-[4.6cqw] tracking-[0.2em] whitespace-nowrap text-muted-foreground">¡UNA GRAN AVENTURA ESTÁ POR COMENZAR!</p>
+            <h1 className="mt-[2cqw] font-athelas text-[15cqw] leading-none text-foreground">Baby Shower</h1>
           </div>
         </div>
         <p className="p-7 text-center leading-relaxed text-muted-foreground">
