@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { CalendarHeart, Clock, MapPin, Gift, ShoppingBag } from "lucide-react";
+import { CalendarHeart, Clock, MapPin, Gift, ShoppingBag, MessageCircleHeart } from "lucide-react";
 import hero from "@/assets/hero-dino.jpg";
 import stego from "@/assets/dino-stego.png";
 import trex from "@/assets/dino-trex.png";
@@ -53,16 +53,28 @@ function Index() {
         </p>
       </section>
 
-      <section className="relative rounded-[2rem] bg-card p-7 pt-10 text-center shadow-soft">
+      <section className="rounded-[2rem] bg-card p-7 pt-10 pb-8 text-center shadow-soft">
         <img src={trex} alt="" className="float absolute -top-12 -right-3 w-24" />
-        <div className="mb-4 flex justify-center gap-3 text-primary">
-          <span className="rounded-full bg-secondary p-3"><CalendarHeart /></span>
-          <span className="rounded-full bg-secondary p-3"><Clock /></span>
+        <h2 className="mb-6 font-athelas text-4xl text-primary">Fecha y Hora</h2>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="rounded-3xl border border-border/60 bg-background/60 px-3 py-6">
+            <CalendarHeart className="mx-auto h-8 w-8 text-primary" strokeWidth={1.5} />
+            <p className="mt-4 text-sm tracking-[0.25em] text-primary">FECHA</p>
+            <p className="mt-2 font-serif text-xl leading-snug text-foreground sm:text-2xl">
+              Sábado
+              <br />28 de noviembre
+            </p>
+          </div>
+          <div className="rounded-3xl border border-border/60 bg-background/60 px-3 py-6">
+            <Clock className="mx-auto h-8 w-8 text-primary" strokeWidth={1.5} />
+            <p className="mt-4 text-sm tracking-[0.25em] text-primary">HORA</p>
+            <p className="mt-2 font-serif text-xl leading-snug text-foreground sm:text-2xl">
+              2:00 PM
+              <br />
+              <span className="text-lg text-muted-foreground sm:text-xl">En punto</span>
+            </p>
+          </div>
         </div>
-        <p className="font-serif text-2xl text-foreground sm:text-3xl">
-          El 28 de noviembre
-          <br />2:00 PM
-        </p>
         <a
           href="https://maps.app.goo.gl/4CZrDweUNYttZMgSA?g_st=iw"
           target="_blank"
@@ -72,6 +84,7 @@ function Index() {
           <MapPin /> Ver Ubicación del Salón
         </a>
       </section>
+
 
       <section className="rounded-[2rem] bg-card p-7 text-center shadow-soft">
         <h2 className="font-athelas text-4xl text-primary">Mesa de Regalos</h2>
@@ -100,7 +113,29 @@ function Index() {
         </div>
       </section>
 
+      <section className="relative rounded-[2rem] bg-card p-7 pt-10 text-center shadow-soft">
+        <img src={stego} alt="" className="float absolute -top-10 -left-3 w-20" />
+        <div className="mb-4 flex justify-center">
+          <span className="rounded-full bg-secondary p-3">
+            <MessageCircleHeart className="h-6 w-6 text-primary" />
+          </span>
+        </div>
+        <h2 className="font-athelas text-4xl text-primary">Confirma tu Asistencia</h2>
+        <p className="mt-4 leading-relaxed text-muted-foreground">
+          ¡Nos encantaría que estés ahí! Confírmanos tu asistencia mandándonos un mensaje de WhatsApp.
+        </p>
+        <a
+          href="https://wa.me/524421555828?text=Hola%20Miry%20y%20Jorge%2C%20confirmo%20mi%20asistencia%20a%20su%20Baby%20Shower."
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${btn} mt-6 bg-primary text-primary-foreground hover:bg-foreground`}
+        >
+          <MessageCircleHeart /> Confirmar Asistencia
+        </a>
+      </section>
+
       <footer className="flex flex-col items-center gap-3 pb-6 text-center">
+
         <img src={stego} alt="" className="float w-36" />
         <p className="text-muted-foreground">¡Te esperamos! Nos encantará celebrar contigo la llegada de nuestro bebé.</p>
         <p className="font-athelas text-3xl italic text-primary">Con cariño,</p>
