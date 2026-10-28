@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { CalendarHeart, Clock, MapPin, Gift, ShoppingBag } from "lucide-react";
+import { CalendarHeart, Clock, MapPin, Gift, ShoppingBag, MessageCircleHeart } from "lucide-react";
 import hero from "@/assets/hero-dino.jpg";
 import stego from "@/assets/dino-stego.png";
 import trex from "@/assets/dino-trex.png";
