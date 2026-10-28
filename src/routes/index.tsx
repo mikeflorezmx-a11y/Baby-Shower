@@ -53,16 +53,28 @@ function Index() {
         </p>
       </section>
 
-      <section className="relative rounded-[2rem] bg-card p-7 pt-10 text-center shadow-soft">
+      <section className="rounded-[2rem] bg-card p-7 pt-10 pb-8 text-center shadow-soft">
         <img src={trex} alt="" className="float absolute -top-12 -right-3 w-24" />
-        <div className="mb-4 flex justify-center gap-3 text-primary">
-          <span className="rounded-full bg-secondary p-3"><CalendarHeart /></span>
-          <span className="rounded-full bg-secondary p-3"><Clock /></span>
+        <h2 className="mb-6 font-athelas text-4xl text-primary">Fecha y Hora</h2>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="rounded-3xl border border-border/60 bg-background/60 px-3 py-6">
+            <CalendarHeart className="mx-auto h-8 w-8 text-primary" strokeWidth={1.5} />
+            <p className="mt-4 text-sm tracking-[0.25em] text-primary">FECHA</p>
+            <p className="mt-2 font-serif text-xl leading-snug text-foreground sm:text-2xl">
+              Sábado
+              <br />28 de noviembre
+            </p>
+          </div>
+          <div className="rounded-3xl border border-border/60 bg-background/60 px-3 py-6">
+            <Clock className="mx-auto h-8 w-8 text-primary" strokeWidth={1.5} />
+            <p className="mt-4 text-sm tracking-[0.25em] text-primary">HORA</p>
+            <p className="mt-2 font-serif text-xl leading-snug text-foreground sm:text-2xl">
+              2:00 PM
+              <br />
+              <span className="text-lg text-muted-foreground sm:text-xl">En punto</span>
+            </p>
+          </div>
         </div>
-        <p className="font-serif text-2xl text-foreground sm:text-3xl">
-          El 28 de noviembre
-          <br />2:00 PM
-        </p>
         <a
           href="https://maps.app.goo.gl/4CZrDweUNYttZMgSA?g_st=iw"
           target="_blank"
@@ -72,6 +84,7 @@ function Index() {
           <MapPin /> Ver Ubicación del Salón
         </a>
       </section>
+
 
       <section className="rounded-[2rem] bg-card p-7 text-center shadow-soft">
         <h2 className="font-athelas text-4xl text-primary">Mesa de Regalos</h2>
