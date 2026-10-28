@@ -113,7 +113,29 @@ function Index() {
         </div>
       </section>
 
+      <section className="relative rounded-[2rem] bg-card p-7 pt-10 text-center shadow-soft">
+        <img src={stego} alt="" className="float absolute -top-10 -left-3 w-20" />
+        <div className="mb-4 flex justify-center">
+          <span className="rounded-full bg-secondary p-3">
+            <MessageCircleHeart className="h-6 w-6 text-primary" />
+          </span>
+        </div>
+        <h2 className="font-athelas text-4xl text-primary">Confirma tu Asistencia</h2>
+        <p className="mt-4 leading-relaxed text-muted-foreground">
+          ¡Nos encantaría que estés ahí! Confírmanos tu asistencia mandándonos un mensaje de WhatsApp.
+        </p>
+        <a
+          href="https://wa.me/524421555828?text=Hola%20Miry%20y%20Jorge%2C%20confirmo%20mi%20asistencia%20a%20su%20Baby%20Shower."
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${btn} mt-6 bg-primary text-primary-foreground hover:bg-foreground`}
+        >
+          <MessageCircleHeart /> Confirmar Asistencia
+        </a>
+      </section>
+
       <footer className="flex flex-col items-center gap-3 pb-6 text-center">
+
         <img src={stego} alt="" className="float w-36" />
         <p className="text-muted-foreground">¡Te esperamos! Nos encantará celebrar contigo la llegada de nuestro bebé.</p>
         <p className="font-athelas text-3xl italic text-primary">Con cariño,</p>
