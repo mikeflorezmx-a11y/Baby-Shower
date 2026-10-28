@@ -114,7 +114,7 @@ function Index() {
       </section>
 
       <section className="relative rounded-[2rem] bg-card p-7 pt-10 text-center shadow-soft">
-        <img src={stego} alt="" className="float absolute -top-10 -left-3 w-20" />
+        <img src={trex} alt="" className="float absolute -top-10 -left-3 w-20" />
         <div className="mb-4 flex justify-center">
           <span className="rounded-full bg-secondary p-3">
             <MessageCircleHeart className="h-6 w-6 text-primary" />
